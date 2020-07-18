@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManageChapTerActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý tài chương"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnThemChuongAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Thêm chương mới"
+        android:textColor="@color/colorWhite" />
+    <ListView
+    android:id="@+id/ListChapterAdmin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|center_vertical"
+    android:background="@drawable/button"
+    android:backgroundTint="#FFFFFF"
+    android:foregroundGravity="center"
+    android:listSelector="@color/colorMain"
+    android:padding="15dp"
+    android:paddingTop="20dp"/>
+
+</LinearLayout>

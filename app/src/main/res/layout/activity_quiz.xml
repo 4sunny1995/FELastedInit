@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="Trắc nghiệm"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/grvQuestionNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="10">
+
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Câu hỏi "
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rdgAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rdbA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Answer A" />
+
+                <RadioButton
+                    android:id="@+id/rdbB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Answer B" />
+
+                <RadioButton
+                    android:id="@+id/rdbC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Answer C" />
+
+                <RadioButton
+                    android:id="@+id/rdbD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Answer D" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/lblShowKQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnBackQuiz"
+                    style="@style/btnDanger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Prev" />
+
+                <Button
+                    android:id="@+id/btnNextQuiz"
+                    style="@style/btnPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Next" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSubmitExam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:background="@android:color/holo_red_dark"
+            android:text="Nộp bài"
+            android:textColor="@color/colorWhite"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

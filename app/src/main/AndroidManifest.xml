@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.feth">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AddNewRole"></activity>
+        <activity android:name=".AddNewChapter" />
+        <activity android:name=".NotecationActivity" />
+        <activity android:name=".ActiveActivity" />
+        <activity android:name=".AdminCreateUser" />
+        <activity android:name=".ManageRolesActivity" />
+        <activity android:name=".ManageChapTerActivity" />
+        <activity android:name=".MangeUserActivity" />
+        <activity android:name=".AdminHomeActivity" />
+        <activity android:name=".History_Activity" />
+        <activity android:name=".FinishExamActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".ForgotActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ResetpwActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/login"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="50dp">
+
+            <ImageView
+                android:id="@+id/imagLogo"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/logo"></ImageView>
+
+            <TextView
+                android:id="@+id/TenApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="QuizTTHCM "
+                android:textColor="#000000"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_centerInParent="true"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lblLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:gravity="center"
+                android:text="Đăng Nhập"
+                android:textColor="#FF9800"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/row1.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lblUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|right"
+                    android:paddingRight="0dp"
+                    android:text="Tài khoản: "
+                    android:textColor="#FAE1BD"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtUsernamemain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/botron_edittext"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="sunny@gmail.com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row1.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row1.1"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lblPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|right"
+                    android:text="Mật khẩu: "
+                    android:textColor="#FAE1BD"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtPasswordmain"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/botron_edittext"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:text="123123" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row1.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row1.2"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/forgotUsermain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="Quên mật khẩu?                     "
+                    android:textColor="@color/colorYellow"
+                    android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+                    android:textSize="20dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="bottom|right"
+                    android:text="Nếu bạn chưa có tài khoản? "
+                    android:textColor="@color/colorYellow"
+                    android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+                    android:textSize="20dp"
+                    android:textStyle="italic" />
+
+                <TextView
+
+                    android:id="@+id/lblActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="bottom|left"
+                    android:text="Kích hoạt tài khoản "
+
+                    android:textColor="@color/colorYellow"
+                    android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+                    android:textSize="20dp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row1.4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row1.2"
+                android:layout_gravity="center"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/botron_button"
+                    android:text="Đăng nhập"
+                    android:textColor="#FBFBFB"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnExit"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/botron_button"
+                    android:text="Thoát"
+                    android:textColor="#FBFBFB"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

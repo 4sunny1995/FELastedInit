@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    android:background="#FBFDFF"
+    tools:context=".FinishExamActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:id="@+id/imagLogo"
+            style="@style/logosmall">
+        </ImageView>
+        <TextView
+            android:id="@+id/lbProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Trắc nghiệm"
+            android:textColor="#0377D1"
+            android:textSize="33dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="#DFFBE0"
+        android:textColor="#5C00FF"
+        android:text="Kết quả bài kiểm  " />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+<!--            <TextView-->
+<!--                android:id="@+id/tv14"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="18dp"-->
+<!--                android:textColor="#007BDE"-->
+<!--                android:text="Thời gian làm bài: " />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvTimeFish"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:textSize="18dp"-->
+<!--                android:textColor="#007BDE"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=" 39:45" />-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv15"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#007BDE"
+                android:layout_height="wrap_content"
+                android:text="Số lượng  đúng : " />
+            <TextView
+                android:id="@+id/tvNumberTrue"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#007BDE"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv16"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#007BDE"
+                android:layout_height="wrap_content"
+                android:text="Số điểm đạt được  : " />
+            <TextView
+                android:id="@+id/tvPoint"
+                android:textSize="18dp"
+                android:textColor="#007BDE"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnXong123"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#008E06"
+        android:textColor="#FFFF"
+        android:text="Xác nhận" />
+
+    <TextView
+        android:id="@+id/tvDetails"
+        android:textSize="18dp"
+        android:textColor="#FF1100"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem chi tiết bài kiểm tra" />
+
+    <ListView
+        android:id="@+id/listDapAn"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:dividerHeight="8dp"
+
+        android:layout_height="wrap_content" >
+
+
+    </ListView>
+
+
+</LinearLayout>

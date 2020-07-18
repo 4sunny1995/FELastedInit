@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgNewstdmu"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="297dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/titleNewstdmu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            tools:text="titleNews" />
+
+        <TextView
+            android:id="@+id/contentNewstdmu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            tools:text="contentNews" />
+        <TextView
+            android:id="@+id/timepostNewstdmu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            tools:text="time_post" />
+    </LinearLayout>
+
+</LinearLayout>

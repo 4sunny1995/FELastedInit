@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="DANH SÁCH CÁC CHƯƠNG"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:textStyle="bold"></TextView>
+
+        <ListView
+            android:id="@+id/ListChapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:background="@drawable/button"
+            android:backgroundTint="#FFFFFF"
+            android:foregroundGravity="center"
+            android:listSelector="@color/colorMain"
+            android:padding="15dp"
+            android:paddingTop="20dp">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/btnViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E91E63"
+            android:text="Xem lịch sử làm bài"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</FrameLayout>

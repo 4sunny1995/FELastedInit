@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Tư tưởng Hồ Chí Minh</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Tư tưởng Hồ Chí Minh</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="news">Tin tức</string>
+    <string name="profile">Thông tin</string>
+    <string name="practice">Luyện tập</string>
+    <string name="nav_reviews">Ôn tập</string>
+    <string name="tile_chinhphu">Tin tức chính phủ</string>
+    <string name="tile_tdmu">Tin tức Đại học Thủ Dầu Một</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

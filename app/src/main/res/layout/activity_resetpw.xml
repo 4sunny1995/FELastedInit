@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResetpwActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:background="#DEE7EF"
+            tools:context=".MainActivity">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="50dp"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:id="@+id/imagLogo"
+                    android:layout_width="120dp"
+                    android:layout_height="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/logo"></ImageView>
+
+                <TextView
+                    android:id="@+id/TenApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="QuizTTHCM "
+                    android:textColor="#000000"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <!--    android:background="#BF00BCD4"-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/lblLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:gravity="center"
+                    android:text="Quên mật khẩu?"
+                    android:textColor="#008CFB"
+                    android:textSize="36dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/row1.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/lbcodeOTP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="1"
+                        android:gravity="bottom|right"
+                        android:text="Mã OTP "
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/txtcodeOTPResetPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/botron_edittext"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/lb_newpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="1"
+                        android:gravity="bottom|right"
+                        android:text="Mật khẩu  "
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/txtNewPasswordResetPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/botron_edittext"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/lb_CfPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="1"
+                        android:gravity="bottom|right"
+                        android:text="Nhập lại mật khẩu "
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/txtConfirmNewPasswordResetPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/botron_edittext"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnLoginResetPassword"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="130dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/botron_button"
+                    android:text="Đăng nhập"
+                    android:textColor="#FBFBFB"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

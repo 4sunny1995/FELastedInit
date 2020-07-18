@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="#DEE7EF"
+        tools:context=".HomeActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:id="@+id/imagLogo"
+                style="@style/logosmall">
+            </ImageView>
+            <TextView
+                android:id="@+id/lbProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:gravity="center"
+                android:text="Thông tin cá nhân"
+                android:textColor="#0377D1"
+                android:textSize="33dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/botron_whilehide"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnBackForgot"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="170dp"
+                    android:background="@drawable/botron_buttoncancel"
+                    android:text="Quay lại"
+                    android:textColor="#FBFBFB"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnSavePF"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/botron_button"
+                    android:text="Lưu"
+                    android:textColor="#FBFBFB"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textLabel"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:text="Email"
+                    android:textAlignment="center"
+
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+
+                    android:id="@+id/txtEmailPF"
+                    style="@style/TextInput"
+                    android:background="@drawable/botron_edittext"
+                    android:duplicateParentState="true"
+                    android:editable="false"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textLabel"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:text="Họ"
+                    android:textAlignment="center"
+
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+
+                    android:id="@+id/txtFirstNamePD"
+                    style="@style/TextInput"
+                    android:ems="10"
+                    android:background="@drawable/botron_edittext"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblUsername"
+                    style="@style/textLabel"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:text="Tên"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/txtLastNamePF"
+                    style="@style/TextInput"
+                    android:ems="10"
+                    android:background="@drawable/botron_edittext"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblBrithday"
+                    style="@style/textLabel"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:text="Ngày sinh"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/txtBrithdayPF"
+                    style="@style/TextInput"
+                    android:ems="10"
+                    android:background="@drawable/botron_edittext"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAdress"
+                    style="@style/textLabel"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:text="Địa chỉ"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/txtAddressPF"
+                    style="@style/TextInput"
+                    android:background="@drawable/botron_edittext"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblphonePF"
+                    style="@style/textLabel"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:text="Số điện thoại"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/txtphonePF"
+                    style="@style/TextInput"
+                    android:background="@drawable/botron_edittext"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

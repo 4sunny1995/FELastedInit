@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/nav_host_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="0dp">
+
+                <ImageView
+                    android:id="@+id/imagLogo"
+                    style="@style/logosmall">
+                </ImageView>
+                <TextView
+                    android:id="@+id/lbProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:gravity="center"
+                    android:text="Tin tức hôm nay"
+                    android:textColor="#0377D1"
+                    android:textSize="33dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--            <android.support.v4.widget.NestedScrollView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Tin tức chinhphu.vn"
+                    style="@style/viewParent.headerText" />
+
+                <TextView
+                    android:text="Hot news"
+                    style="@style/viewParent.headerText.contentText"
+                    android:layout_marginBottom="20dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="100dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/colorcard"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub1Title"
+                            android:text="Chính trị"
+                            style="@style/viewParent.headerText.HomeCardTitle" />
+
+                        <TextView
+                            android:text="Study nature, love nature,\nclose to nature"
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub1Title"/>
+
+                        <ImageView
+                            android:maxHeight="90dp"
+                            android:src="@drawable/image"
+                            style="@style/homeCardImage" />
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="100dp"
+                        android:background="@color/gradientLightOrange2"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub2Title"
+                            android:text="Chính trị"
+                            style="@style/viewParent.headerText.HomeCardTitle" />
+
+                        <TextView
+                            android:text="Study nature, love nature,\nclose to nature"
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub2Title"/>
+
+                        <ImageView
+                            android:maxHeight="90dp"
+                            android:src="@drawable/image1"
+                            style="@style/homeCardImage" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!--            </android.support.v4.widget.NestedScrollView>-->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
